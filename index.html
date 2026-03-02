@@ -1,348 +1,380 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sushil Ghimire | Academic Portfolio</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Sushil Ghimire | Academic Portfolio</title>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600;800&display=swap');
-        
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        /* Custom Glass Effect */
-        .glass-nav { 
-            background: rgba(15, 23, 42, 0.95); 
-            backdrop-filter: blur(12px); 
-            -webkit-backdrop-filter: blur(12px);
-        }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600;800&display=swap');
 
-        /* Background Pattern */
-        .hero-section { background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)); color: white; }
-        
-        .timeline-border { border-left: 2px solid #e2e8f0; }
-        .timeline-item::before {
-            content: ''; position: absolute; left: -9px; top: 0;
-            width: 18px; height: 18px; background: #3b82f6; border-radius: 50%;
-        }
-    </style>
+    html, body { overflow-x: hidden; }
+    img, iframe { max-width: 100%; }
+
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+    /* Custom Glass Effect */
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    /* Background Pattern */
+    .hero-section {
+      background: url('https://www.transparenttextures.com/patterns/cubes.png'),
+        linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95));
+      color: white;
+    }
+
+    .timeline-border { border-left: 2px solid #e2e8f0; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+  </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
-    <nav class="glass-nav fixed w-full z-50 top-0 text-white">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-lg md:text-xl font-bold tracking-tighter">DR. SUSHIL GHIMIRE</a>
-            
-            <div class="hidden lg:flex space-x-6 text-xs uppercase tracking-widest font-semibold">
-                <a href="#about" class="hover:text-blue-400 transition">Profile</a>
-                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
-                <a href="#research" class="hover:text-blue-400 transition">Research</a>
-                <a href="#cv" class="hover:text-blue-400 transition">CV</a>
-            </div>
-            
-            <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-blue-900 transition font-bold">Contact</a>
-        </div>
-    </nav>
+  <!-- NAVBAR (Responsive + Mobile Menu) -->
+  <nav class="glass-nav fixed w-full z-50 top-0 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-base sm:text-lg md:text-xl font-bold tracking-tighter">
+        DR. SUSHIL GHIMIRE
+      </a>
 
-    <header id="home" class="hero-section min-h-screen flex items-center px-4 md:px-6 pt-24">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div data-aos="fade-right" data-aos-duration="1000">
-                <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs">Professor & Vice Principal</span>
-                <h2 class="text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight">SUSHIL GHIMIRE<br> <span class="italic font-normal text-slate-300">PhD</span></h2>
-                <p class="text-base md:text-lg text-slate-400 max-w-2xl mb-8 leading-relaxed font-light">
-                    Intellectual journey shaped by language, narrative, and the structures of thought. Specialized in Postcolonial Discourse, Trauma Fiction, and the Politics of Representation.
-                </p>
-                <a href="#about" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-bold shadow-xl inline-block">Explore Profile</a>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="1200" class="mt-8 md:mt-0">
-                <img src="sushilghimire.jpg" class="rounded-3xl shadow-2xl w-full h-auto" alt="Dr. Sushil Ghimire">
-            </div>
-        </div>
-    </header>
-<section
- id="about" class="py-16 md:py-24 px-4 md:px-6 bg-white">
+      <!-- Desktop links -->
+      <div class="hidden lg:flex space-x-6 text-xs uppercase tracking-widest font-semibold">
+        <a href="#about" class="hover:text-blue-400 transition">Profile</a>
+        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+        <a href="#research" class="hover:text-blue-400 transition">Research</a>
+        <a href="#cv" class="hover:text-blue-400 transition">CV</a>
+      </div>
+
+      <!-- Right side -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-blue-900 transition font-bold">
+          Contact
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="menuBtn" class="lg:hidden p-2 rounded-xl bg-white/10 hover:bg-white/20 transition" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="lg:hidden hidden border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4 text-sm font-semibold">
+        <a href="#about" class="hover:text-blue-400 transition">Profile</a>
+        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+        <a href="#research" class="hover:text-blue-400 transition">Research</a>
+        <a href="#cv" class="hover:text-blue-400 transition">CV</a>
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full text-xs hover:bg-white hover:text-blue-900 transition font-bold w-fit">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-section min-h-screen flex items-center px-4 md:px-6 pt-24">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs">Professor & Vice Principal</span>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight">
+          SUSHIL GHIMIRE<br>
+          <span class="italic font-normal text-slate-300">PhD</span>
+        </h2>
+        <p class="text-base md:text-lg text-slate-400 max-w-2xl mb-8 leading-relaxed font-light">
+          Intellectual journey shaped by language, narrative, and the structures of thought. Specialized in Postcolonial Discourse, Trauma Fiction, and the Politics of Representation.
+        </p>
+        <a href="#about" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-bold shadow-xl inline-block">
+          Explore Profile
+        </a>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-duration="1200" class="mt-8 md:mt-0">
+        <img src="sushilghimire.jpg" class="rounded-3xl shadow-2xl w-full h-auto" alt="Dr. Sushil Ghimire">
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-white">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20">
-        
-        <div data-aos="fade-right">
-            <h3 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8">Scholarly Profile</h3>
-            
-            <p class="text-base md:text-lg text-slate-600 mb-6 leading-relaxed">
-                I am a researcher and Professor of English committed to exploring how language, narrative structures, and cultural discourses shape human consciousness and social realities. My academic inquiry engages postcolonial theory, travel writing, nationalism, trauma studies, and the intersection of magical realism and the uncanny within contemporary literature.
-            </p>
 
-            <p class="text-base md:text-lg text-slate-600 mb-6 leading-relaxed">
-                As a PhD scholar with extensive experience in research writing (MLA & APA latest editions), I have presented papers at international conferences, including the 25th International MELOW Conference, and actively contribute to scholarly discourse on Western and Nepalese travel narratives. My work particularly examines identity formation, representation, and the politics of cultural gaze.
-            </p>
-            
-            <p class="text-base md:text-lg text-slate-600 italic border-l-4 border-blue-500 pl-6 mb-8 font-serif">
-                "Research, for me, is a dialogic engagement between text and theory—where each interpretive framework reveals new dimensions of meaning, power, and identity."
-            </p>
+      <div data-aos="fade-right">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8">Scholarly Profile</h3>
+
+        <p class="text-base md:text-lg text-slate-600 mb-6 leading-relaxed">
+          I am a researcher and Professor of English committed to exploring how language, narrative structures, and cultural discourses shape human consciousness and social realities. My academic inquiry engages postcolonial theory, travel writing, nationalism, trauma studies, and the intersection of magical realism and the uncanny within contemporary literature.
+        </p>
+
+        <p class="text-base md:text-lg text-slate-600 mb-6 leading-relaxed">
+          As a PhD scholar with extensive experience in research writing (MLA & APA latest editions), I have presented papers at international conferences, including the 25th International MELOW Conference, and actively contribute to scholarly discourse on Western and Nepalese travel narratives. My work particularly examines identity formation, representation, and the politics of cultural gaze.
+        </p>
+
+        <p class="text-base md:text-lg text-slate-600 italic border-l-4 border-blue-500 pl-6 mb-8 font-serif">
+          "Research, for me, is a dialogic engagement between text and theory—where each interpretive framework reveals new dimensions of meaning, power, and identity."
+        </p>
+      </div>
+
+      <div class="space-y-6" data-aos="fade-left">
+
+        <div class="p-6 bg-slate-50 rounded-xl">
+          <h4 class="text-xl font-bold mb-2">Academic & Administrative Leadership</h4>
+          <p class="text-slate-600 text-sm md:text-base">
+            Vice Principal and BBA/BIM Program Coordinator with experience in curriculum development, institutional planning, quality assurance (ISO 21001 orientation), academic administration, and conference convenorship at national and international levels.
+          </p>
         </div>
 
-        <div class="space-y-6" data-aos="fade-left">
-            
-            <div class="p-6 bg-slate-50 rounded-xl">
-                <h4 class="text-xl font-bold mb-2">Academic & Administrative Leadership</h4>
-                <p class="text-slate-600 text-sm md:text-base">
-                    Vice Principal and BBA/BIM Program Coordinator with experience in curriculum development, institutional planning, quality assurance (ISO 21001 orientation), academic administration, and conference convenorship at national and international levels.
-                </p>
-            </div>
-
-            <div class="p-6 bg-slate-50 rounded-xl">
-                <h4 class="text-xl font-bold mb-2">Research Orientation</h4>
-                <p class="text-slate-600 text-sm md:text-base">
-                    Critical engagement with travel narratives, postcolonial discourse (Said, Bhabha), nationalism and identity studies, trauma and memory theory, and the aesthetic convergence of magical realism and the uncanny in global and South Asian literatures.
-                </p>
-            </div>
-
-            <div class="p-6 bg-slate-50 rounded-xl">
-                <h4 class="text-xl font-bold mb-2">Teaching Philosophy</h4>
-                <p class="text-slate-600 text-sm md:text-base">
-                    Cultivating analytical rigor and reflective inquiry by translating complex theoretical paradigms into meaningful academic dialogue, enabling students to interpret texts with intellectual independence, methodological precision, and critical depth.
-                </p>
-            </div>
-
+        <div class="p-6 bg-slate-50 rounded-xl">
+          <h4 class="text-xl font-bold mb-2">Research Orientation</h4>
+          <p class="text-slate-600 text-sm md:text-base">
+            Critical engagement with travel narratives, postcolonial discourse (Said, Bhabha), nationalism and identity studies, trauma and memory theory, and the aesthetic convergence of magical realism and the uncanny in global and South Asian literatures.
+          </p>
         </div>
+
+        <div class="p-6 bg-slate-50 rounded-xl">
+          <h4 class="text-xl font-bold mb-2">Teaching Philosophy</h4>
+          <p class="text-slate-600 text-sm md:text-base">
+            Cultivating analytical rigor and reflective inquiry by translating complex theoretical paradigms into meaningful academic dialogue, enabling students to interpret texts with intellectual independence, methodological precision, and critical depth.
+          </p>
+        </div>
+
+      </div>
     </div>
-</section>
+  </section>
 
-<section 
-id="experience" class="py-16 md:py-24 px-4 md:px-6 bg-slate-50">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-16 md:py-24 px-4 md:px-6 bg-slate-50">
     <h3 class="text-center text-3xl md:text-5xl font-bold mb-12 md:mb-20" data-aos="fade-up">
-        Academic Leadership, Research Engagement & Education
+      Academic Leadership, Research Engagement & Education
     </h3>
-    
-    <div class="max-w-4xl mx-auto timeline-border ml-6 md:ml-auto">
-        
-        <div class="relative pl-10 mb-12 timeline-item" data-aos="fade-left">
-            <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">2009 — Present</span>
-            <h4 class="text-xl md:text-2xl font-bold mt-2">Vice Principal & Professor of English</h4>
-            <p class="text-slate-500 mb-2 text-sm md:text-base">Balkumari College, Bharatpur, Chitwan</p>
-            <p class="text-sm text-slate-600">
-                Providing academic and strategic leadership while fostering a culture of research, critical inquiry, and institutional transformation. Leading curriculum innovation across undergraduate and graduate programs (BBA, BIM, BBS, B.Ed., MBS, MBA), coordinating quality assurance initiatives aligned with ISO 21001 standards, and convening national and international academic conferences. Actively supervising research, mentoring faculty development, and strengthening digital academic infrastructures.
-            </p>
-        </div>
 
-        <div class="relative pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="150">
-            <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">2008 — 2017</span>
-            <h4 class="text-xl md:text-2xl font-bold mt-2">Lecturer in English Studies</h4>
-            <p class="text-slate-500 mb-2 text-sm md:text-base">Maiyadevi Girls’ College & Presidency College</p>
-            <p class="text-sm text-slate-600">
-                Taught English Literature and Business Communication with emphasis on academic writing (MLA & APA latest editions), critical theory, and interdisciplinary textual analysis. Contributed to modern curriculum design, pedagogical innovation, and student-centered academic mentoring.
-            </p>
-        </div>
+    <div class="max-w-4xl mx-auto timeline-border ml-4 sm:ml-6">
 
-        <div class="relative pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="300">
-            <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Academic Formation</span>
-            <h4 class="text-xl md:text-2xl font-bold mt-2">Doctoral Researcher in English</h4>
-            <p class="text-slate-500 mb-2 text-sm md:text-base">Mewar University, Rajasthan, India</p>
-            <p class="text-sm text-slate-600">
-                Pursuing doctoral research in English Literature with specialization in postcolonial theory, travel writing, nationalism, trauma studies, and the aesthetics of magical realism and the uncanny. Research foregrounds comparative perspectives between Western and Nepalese narratives.
-            </p>
-        </div>
+      <div class="relative pl-8 sm:pl-10 mb-12 timeline-item" data-aos="fade-left">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">2009 — Present</span>
+        <h4 class="text-xl md:text-2xl font-bold mt-2">Vice Principal & Professor of English</h4>
+        <p class="text-slate-500 mb-2 text-sm md:text-base">Balkumari College, Bharatpur, Chitwan</p>
+        <p class="text-sm text-slate-600">
+          Providing academic and strategic leadership while fostering a culture of research, critical inquiry, and institutional transformation. Leading curriculum innovation across undergraduate and graduate programs (BBA, BIM, BBS, B.Ed., MBS, MBA), coordinating quality assurance initiatives aligned with ISO 21001 standards, and convening national and international academic conferences. Actively supervising research, mentoring faculty development, and strengthening digital academic infrastructures.
+        </p>
+      </div>
 
-        <div class="relative pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="450">
-            <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Postgraduate & Undergraduate Studies</span>
-            <h4 class="text-xl md:text-2xl font-bold mt-2">Master’s & Bachelor’s Degrees in English</h4>
-            <p class="text-slate-500 mb-2 text-sm md:text-base">Tribhuvan University, Nepal</p>
-            <p class="text-sm text-slate-600">
-                Completed advanced studies in English Literature with concentration on literary theory, modern and postmodern fiction, cultural studies, and critical methodology—forming the intellectual foundation for subsequent scholarly and administrative engagements.
-            </p>
-        </div>
+      <div class="relative pl-8 sm:pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="150">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">2008 — 2017</span>
+        <h4 class="text-xl md:text-2xl font-bold mt-2">Lecturer in English Studies</h4>
+        <p class="text-slate-500 mb-2 text-sm md:text-base">Maiyadevi Girls’ College & Presidency College</p>
+        <p class="text-sm text-slate-600">
+          Taught English Literature and Business Communication with emphasis on academic writing (MLA & APA latest editions), critical theory, and interdisciplinary textual analysis. Contributed to modern curriculum design, pedagogical innovation, and student-centered academic mentoring.
+        </p>
+      </div>
+
+      <div class="relative pl-8 sm:pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="300">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Academic Formation</span>
+        <h4 class="text-xl md:text-2xl font-bold mt-2">Doctoral Researcher in English</h4>
+        <p class="text-slate-500 mb-2 text-sm md:text-base">Mewar University, Rajasthan, India</p>
+        <p class="text-sm text-slate-600">
+          Pursuing doctoral research in English Literature with specialization in postcolonial theory, travel writing, nationalism, trauma studies, and the aesthetics of magical realism and the uncanny. Research foregrounds comparative perspectives between Western and Nepalese narratives.
+        </p>
+      </div>
+
+      <div class="relative pl-8 sm:pl-10 mb-12 timeline-item" data-aos="fade-left" data-aos-delay="450">
+        <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Postgraduate & Undergraduate Studies</span>
+        <h4 class="text-xl md:text-2xl font-bold mt-2">Master’s & Bachelor’s Degrees in English</h4>
+        <p class="text-slate-500 mb-2 text-sm md:text-base">Tribhuvan University, Nepal</p>
+        <p class="text-sm text-slate-600">
+          Completed advanced studies in English Literature with concentration on literary theory, modern and postmodern fiction, cultural studies, and critical methodology—forming the intellectual foundation for subsequent scholarly and administrative engagements.
+        </p>
+      </div>
 
     </div>
-</section>
-</section>
+  </section>
 
-<section id="research" class="py-16 md:py-24 px-4 md:px-6 bg-white">
+  <!-- RESEARCH -->
+  <section id="research" class="py-16 md:py-24 px-4 md:px-6 bg-white">
     <h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">Research Trajectories</h3>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 max-w-7xl mx-auto">
-        
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in">
-            <i class="fas fa-plane-departure text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">Travel Narratives & Cultural Representation</p>
-        </div>
 
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="100">
-            <i class="fas fa-globe-africa text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">Postcolonial Theory & Hybridity</p>
-        </div>
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in">
+        <i class="fas fa-plane-departure text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">Travel Narratives & Cultural Representation</p>
+      </div>
 
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fas fa-flag text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">Nationalism & Cultural Identity</p>
-        </div>
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-globe-africa text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">Postcolonial Theory & Hybridity</p>
+      </div>
 
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="300">
-            <i class="fas fa-head-side-virus text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">Trauma, Memory & Partition Studies</p>
-        </div>
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-flag text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">Nationalism & Cultural Identity</p>
+      </div>
 
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="400">
-            <i class="fas fa-magic text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">Magical Realism & Narrative Ambiguity</p>
-        </div>
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-head-side-virus text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">Trauma, Memory & Partition Studies</p>
+      </div>
 
-        <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="500">
-            <i class="fas fa-user-secret text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-            <p class="font-bold text-xs md:text-sm">The Uncanny & Psychoanalytic Criticism</p>
-        </div>
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fas fa-magic text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">Magical Realism & Narrative Ambiguity</p>
+      </div>
+
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="500">
+        <i class="fas fa-user-secret text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">The Uncanny & Psychoanalytic Criticism</p>
+      </div>
 
     </div>
-   <section id="gallery" class="py-16 md:py-24 px-4 md:px-6 bg-slate-950 text-white">
-    <h3 class="text-center text-3xl md:text-5xl font-bold mb-12 md:mb-20" data-aos="fade-up">Moments & <span class="text-blue-500">Memory</span></h3>
-    
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-16 md:py-24 px-4 md:px-6 bg-slate-950 text-white">
+    <h3 class="text-center text-3xl md:text-5xl font-bold mb-12 md:mb-20" data-aos="fade-up">
+      Moments & <span class="text-blue-500">Memory</span>
+    </h3>
+
     <div class="max-w-[90rem] mx-auto relative">
-        <div class="swiper mySwiper overflow-hidden rounded-3xl shadow-2xl">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="IMG_0205.jpeg" alt="Gallery Image 1" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="IMG_0184.jpeg" alt="Gallery Image 2" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="IMG_9698.jpeg" alt="Gallery Image 3" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="IMG_9703.jpeg" alt="Gallery Image 4" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="7CAC0531-CA21-4E2E-AAA8-86234D936CA6.jpeg" alt="Gallery Image 5" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="7F4CAC92-45B8-4381-A15F-F7C3940AA2BC.jpeg" alt="Gallery Image 6" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="9A266D5F-015D-4626-959B-9837D11BF985.jpeg" alt="Gallery Image 7" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="9D42FF94-5C0B-4F98-979C-03C2FE31AFBC.jpeg" alt="Gallery Image 8" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="38E46D07-ECD9-47A4-8450-B1522F15BFE4.jpeg" alt="Gallery Image 9" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="86B82BC7-94A8-4ABA-8F3C-C263996F2568.jpeg" alt="Gallery Image 10" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="92C989FA-F150-40A9-AF34-E499D4E0F5DF.jpeg" alt="Gallery Image 11" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="0895CDC7-BB40-4AD1-A34C-7A698544E441.jpeg" alt="Gallery Image 12" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="6120A472-2E2C-4E50-9037-A17D060E2376.jpeg" alt="Gallery Image 13" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="7395B7D8-E554-4F9D-BAB8-677A3130ECA5.jpeg" alt="Gallery Image 14" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="9019CD8A-3C36-46AE-AF63-DCB98010E293.jpeg" alt="Gallery Image 15" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="27950E89-C58C-4024-B3ED-20248F38CE18.jpeg" alt="Gallery Image 16" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="780601F1-752E-4FEF-820A-D96CE262AB06.jpeg" alt="Gallery Image 17" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="52556507-3074-477A-95A9-72436510ABA3.jpeg" alt="Gallery Image 18" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="A883A135-7CB7-4E6B-B2A9-5A713C468FB7.jpeg" alt="Gallery Image 19" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="C1E25668-FA8D-481D-804F-4BBAC7628F4D.jpeg" alt="Gallery Image 20" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="D7E66C98-F07F-4B90-44BC-7628F4D.jpeg" alt="Gallery Image 21" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="E4602890-26F8-497E-B398-A62E9F14F118.jpeg" alt="Gallery Image 22" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-                <div class="swiper-slide">
-                    <img src="F5D5201E-48A9-463B-88C3-E266AF40A499.jpeg" alt="Gallery Image 23" class="w-full h-[500px] md:h-[700px] object-cover">
-                </div>
-            </div>
-            
-            <div class="swiper-button-next !text-white bg-slate-900/50 p-6 rounded-full !w-12 !h-12 flex items-center justify-center"></div>
-            <div class="swiper-button-prev !text-white bg-slate-900/50 p-6 rounded-full !w-12 !h-12 flex items-center justify-center"></div>
-            
-            <div class="swiper-pagination !bottom-4"></div>
+      <div class="swiper mySwiper overflow-hidden rounded-3xl shadow-2xl">
+        <div class="swiper-wrapper">
+
+          <!-- Repeat slides -->
+          <div class="swiper-slide"><img src="IMG_0205.jpeg" alt="Gallery Image 1" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="IMG_0184.jpeg" alt="Gallery Image 2" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="IMG_9698.jpeg" alt="Gallery Image 3" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="IMG_9703.jpeg" alt="Gallery Image 4" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="7CAC0531-CA21-4E2E-AAA8-86234D936CA6.jpeg" alt="Gallery Image 5" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="7F4CAC92-45B8-4381-A15F-F7C3940AA2BC.jpeg" alt="Gallery Image 6" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="9A266D5F-015D-4626-959B-9837D11BF985.jpeg" alt="Gallery Image 7" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="9D42FF94-5C0B-4F98-979C-03C2FE31AFBC.jpeg" alt="Gallery Image 8" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="38E46D07-ECD9-47A4-8450-B1522F15BFE4.jpeg" alt="Gallery Image 9" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="86B82BC7-94A8-4ABA-8F3C-C263996F2568.jpeg" alt="Gallery Image 10" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="92C989FA-F150-40A9-AF34-E499D4E0F5DF.jpeg" alt="Gallery Image 11" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="0895CDC7-BB40-4AD1-A34C-7A698544E441.jpeg" alt="Gallery Image 12" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="6120A472-2E2C-4E50-9037-A17D060E2376.jpeg" alt="Gallery Image 13" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="7395B7D8-E554-4F9D-BAB8-677A3130ECA5.jpeg" alt="Gallery Image 14" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="9019CD8A-3C36-46AE-AF63-DCB98010E293.jpeg" alt="Gallery Image 15" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="27950E89-C58C-4024-B3ED-20248F38CE18.jpeg" alt="Gallery Image 16" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="780601F1-752E-4FEF-820A-D96CE262AB06.jpeg" alt="Gallery Image 17" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="52556507-3074-477A-95A9-72436510ABA3.jpeg" alt="Gallery Image 18" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="A883A135-7CB7-4E6B-B2A9-5A713C468FB7.jpeg" alt="Gallery Image 19" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="C1E25668-FA8D-481D-804F-4BBAC7628F4D.jpeg" alt="Gallery Image 20" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="D7E66C98-F07F-4B90-44BC-7628F4D.jpeg" alt="Gallery Image 21" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="E4602890-26F8-497E-B398-A62E9F14F118.jpeg" alt="Gallery Image 22" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+          <div class="swiper-slide"><img src="F5D5201E-48A9-463B-88C3-E266AF40A499.jpeg" alt="Gallery Image 23" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
+
         </div>
+
+        <div class="swiper-button-next !text-white bg-slate-900/50 p-6 rounded-full !w-12 !h-12 flex items-center justify-center"></div>
+        <div class="swiper-button-prev !text-white bg-slate-900/50 p-6 rounded-full !w-12 !h-12 flex items-center justify-center"></div>
+        <div class="swiper-pagination !bottom-4"></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<script>
+  <script>
     var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-</script>
-</section>
+  </script>
 
-    <section id="cv" class="py-16 md:py-24 px-4 md:px-6 bg-slate-900 text-white">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
-            <div class="md:w-1/2" data-aos="fade-right">
-                <h3 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Academic <br>Record</h3>
-                <p class="text-slate-400 text-base md:text-lg mb-8 md:mb-10">Access the comprehensive professional portfolio, published research articles, and educational history.</p>
-                <a href="SUSHIL_pdf.pdf" class="inline-block bg-white text-slate-900 px-6 md:px-10 py-3 md:py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">Download Resume</a>
-            </div>
-            <div class="md:w-1/2 w-full h-[300px] md:h-[600px] bg-slate-800 rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-left">
-                <iframe src="SUSHIL_pdf.pdf" class="w-full h-full border-none"></iframe>
-            </div>
+  <!-- CV -->
+  <section id="cv" class="py-16 md:py-24 px-4 md:px-6 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div class="md:w-1/2" data-aos="fade-right">
+        <h3 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Academic <br>Record</h3>
+        <p class="text-slate-400 text-base md:text-lg mb-8 md:mb-10">
+          Access the comprehensive professional portfolio, published research articles, and educational history.
+        </p>
+        <a href="SUSHIL_pdf.pdf" class="inline-block bg-white text-slate-900 px-6 md:px-10 py-3 md:py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">
+          Download Resume
+        </a>
+      </div>
+
+      <div class="md:w-1/2 w-full h-[320px] sm:h-[420px] md:h-[600px] bg-slate-800 rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-left">
+        <iframe src="SUSHIL_pdf.pdf" class="w-full h-full border-none"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact" class="py-16 md:py-24 px-4 md:px-6 bg-white border-t">
+    <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
+      <h3 class="text-3xl md:text-5xl font-bold mb-6 md:mb-8">Get In Touch</h3>
+      <p class="text-lg md:text-xl text-slate-500 mb-10 md:mb-12">
+        I am always open to academic dialogue and collaborative research.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6 md:gap-10">
+        <div class="p-6 md:p-8 border rounded-2xl">
+          <i class="fas fa-envelope text-blue-600 text-2xl md:text-3xl mb-4"></i>
+          <p class="font-bold text-sm md:text-base">ghsush@gmail.com</p>
         </div>
-    </section>
-    
-
-    <footer id="contact" class="py-16 md:py-24 px-4 md:px-6 bg-white border-t">
-        <div class="max-w-5xl mx-auto text-center" data-aos="zoom-in">
-            <h3 class="text-3xl md:text-5xl font-bold mb-6 md:mb-8">Get In Touch</h3>
-            <p class="text-lg md:text-xl text-slate-500 mb-10 md:mb-12">I am always open to academic dialogue and collaborative research.</p>
-            <div class="grid md:grid-cols-3 gap-6 md:gap-10">
-                <div class="p-6 md:p-8 border rounded-2xl">
-                    <i class="fas fa-envelope text-blue-600 text-2xl md:text-3xl mb-4"></i>
-                    <p class="font-bold text-sm md:text-base">ghsush@gmail.com</p>
-                </div>
-                <div class="p-6 md:p-8 border rounded-2xl">
-                    <i class="fas fa-phone text-blue-600 text-2xl md:text-3xl mb-4"></i>
-                    <p class="font-bold text-sm md:text-base">+977-9855081820</p>
-                </div>
-                <div class="p-6 md:p-8 border rounded-2xl">
-                    <i class="fas fa-map-marker-alt text-blue-600 text-2xl md:text-3xl mb-4"></i>
-                    <p class="font-bold text-sm md:text-base">Bharatpur-2, Chitwan</p>
-                </div>
-            </div>
+        <div class="p-6 md:p-8 border rounded-2xl">
+          <i class="fas fa-phone text-blue-600 text-2xl md:text-3xl mb-4"></i>
+          <p class="font-bold text-sm md:text-base">+977-9855081820</p>
         </div>
-    </footer>
+        <div class="p-6 md:p-8 border rounded-2xl">
+          <i class="fas fa-map-marker-alt text-blue-600 text-2xl md:text-3xl mb-4"></i>
+          <p class="font-bold text-sm md:text-base">Bharatpur-2, Chitwan</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        AOS.init({
-            once: true, // Animation happens only once
-            duration: 800, // Duration of animation
-        });
-    </script>
+  <!-- AOS + Mobile Menu Script -->
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+    });
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+    });
+  </script>
+
 </body>
 </html>
