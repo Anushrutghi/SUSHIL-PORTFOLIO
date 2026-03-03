@@ -207,131 +207,169 @@
 
     </div>
   </section>
-<style>
-/* Premium Card Animation */
-.premium-card{
-  position:relative;
-  overflow:hidden;
-  transition:transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
-  box-shadow:0 10px 25px rgba(2,6,23,0.08);
-}
-.premium-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 22px 45px rgba(2,6,23,0.18);
-}
-.premium-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  opacity:0;
-  transition:opacity 0.5s ease;
-  background:radial-gradient(circle at 30% 20%, rgba(99,102,241,0.18), transparent 55%);
-  pointer-events:none;
-}
-.premium-card:hover::after{
-  opacity:1;
-}
-</style>
-
-
 <!-- RESEARCH -->
 <section id="research" class="py-16 md:py-24 px-4 md:px-6 bg-white">
-<h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">Scholarly Publications</h3>
+  <h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">Scholarly Publications</h3>
 
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 max-w-7xl mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 max-w-7xl mx-auto">
 
-<a href="https://doi.org/10.3126/jbkc.v8i0.29306" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-book-open text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Spiritual Identity in Tagore’s <br><i>Chandalika</i></p>
-</div>
-</a>
+    <!-- 1 -->
+    <a href="https://doi.org/10.3126/jbkc.v8i0.29306" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in">
+        <i class="fas fa-book-open text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Spiritual Identity in Tagore’s <br> <i>Chandalika</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/jbkc.v10i1.42105" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-paw text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Animal Imagery in Orwell’s <br><i>Animal Farm</i></p>
-</div>
-</a>
+    <!-- 2 -->
+    <a href="https://doi.org/10.3126/jbkc.v10i1.42105" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-paw text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Animal Imagery in Orwell’s <br> <i>Animal Farm</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/jbkc.v12i1.60426" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-brain text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Trauma Representation in <br><i>The Andhi Khola</i></p>
-</div>
-</a>
+    <!-- 3 -->
+    <a href="https://doi.org/10.3126/jbkc.v12i1.60426" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-brain text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Trauma Representation in <br> <i>The Andhi Khola</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/vot.v8i1.60866" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-coins text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Wealth & Power in Diaz’s <br><i>Trust</i></p>
-</div>
-</a>
+    <!-- 4 -->
+    <a href="https://doi.org/10.3126/vot.v8i1.60866" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-coins text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Wealth & Power in Diaz’s <br> <i>Trust</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/mjecs.v3i1.89924" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-feather-alt text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Violence & Memory in <br><i>Seto Bagh</i></p>
-</div>
-</a>
+    <!-- 5 -->
+    <a href="https://doi.org/10.3126/mjecs.v3i1.89924" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fas fa-feather-alt text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Violence & Memory in <br> <i>Seto Bagh</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/jbkc.v14i1.80755" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-leaf text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Posthuman Ethics in Han Kang’s <br><i>The Vegetarian</i></p>
-</div>
-</a>
+    <!-- 6 -->
+    <a href="https://doi.org/10.3126/jbkc.v14i1.80755" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="500">
+        <i class="fas fa-leaf text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Posthuman Ethics in Han Kang’s <br> <i>The Vegetarian</i>
+        </p>
+      </div>
+    </a>
 
-<a href="https://doi.org/10.3126/mjecs.v4i1.89983" target="_blank" rel="noopener">
-<div class="premium-card p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white group">
-<i class="fas fa-venus-mars text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
-<p class="font-bold text-xs md:text-sm">Comparative Feminism: <br><i>Wuthering Heights</i> & <i>Blue Mimosa</i></p>
-</div>
-</a>
+    <!-- 7 -->
+    <a href="https://doi.org/10.3126/mjecs.v4i1.89983" target="_blank" rel="noopener">
+      <div class="p-6 md:p-8 border rounded-2xl text-center hover:bg-blue-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="600">
+        <i class="fas fa-venus-mars text-2xl md:text-3xl mb-4 text-blue-600 group-hover:text-white"></i>
+        <p class="font-bold text-xs md:text-sm">
+          Comparative Feminism: <br> <i>Wuthering Heights</i> & <i>Blue Mimosa</i>
+        </p>
+      </div>
+    </a>
 
-</div>
+  </div>
 </section>
 
 
-<!-- NEPJOL -->
+<!-- NEPJOL (Nepal Journals Online) -->
 <section id="nepjol" class="py-16 md:py-24 px-4 md:px-6 bg-gray-50">
-<h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">NepJOL Publications</h3>
+  <h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">NepJOL Publications</h3>
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-<a href="https://www.nepjol.info/index.php/jbkc" target="_blank">
-<div class="premium-card p-6 border rounded-2xl text-center hover:bg-emerald-600 hover:text-white group">
-<i class="fas fa-journal-whills text-3xl mb-4 text-emerald-600 group-hover:text-white"></i>
-<p class="font-bold text-sm">Journal of Balkumari College</p>
-</div>
-</a>
+    <a href="https://www.nepjol.info/index.php/jbkc" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-emerald-600 hover:text-white transition group" data-aos="zoom-in">
+        <i class="fas fa-journal-whills text-3xl mb-4 text-emerald-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">Journal of Balkumari College<br><span class="text-xs opacity-80">Browse issues & papers</span></p>
+      </div>
+    </a>
 
-<a href="https://orcid.org/0009-0008-2477-4939" target="_blank">
-<div class="premium-card p-6 border rounded-2xl text-center hover:bg-emerald-600 hover:text-white group">
-<i class="fas fa-id-badge text-3xl mb-4 text-emerald-600 group-hover:text-white"></i>
-<p class="font-bold text-sm">ORCID Profile</p>
-</div>
-</a>
+    <a href="https://www.nepjol.info/index.php/mjecs/article/view/89924" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-emerald-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-scroll text-3xl mb-4 text-emerald-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">Mindscape (MJ/ECS)<br><span class="text-xs opacity-80">View NepJOL record</span></p>
+      </div>
+    </a>
 
-</div>
+    <a href="https://orcid.org/0009-0008-2477-4939" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-emerald-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-id-badge text-3xl mb-4 text-emerald-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">ORCID Profile<br><span class="text-xs opacity-80">0009-0008-2477-4939</span></p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="https://www.nepjol.info/index.php/jbkc" target="_blank" rel="noopener"
+       class="px-6 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition">
+      View on NepJOL
+    </a>
+  </div>
 </section>
 
 
 <!-- ACADEMIA -->
 <section id="academia" class="py-16 md:py-24 px-4 md:px-6 bg-white">
-<h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">Academia.edu Research</h3>
+  <h3 class="text-center text-3xl md:text-4xl font-bold mb-12 md:mb-16">Academia.edu Research</h3>
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-<a href="https://mewaruniversity.academia.edu/SushilGhimire" target="_blank">
-<div class="premium-card p-6 border rounded-2xl text-center hover:bg-purple-600 hover:text-white group">
-<i class="fas fa-university text-3xl mb-4 text-purple-600 group-hover:text-white"></i>
-<p class="font-bold text-sm">PhD Research Work</p>
-</div>
-</a>
+    <a href="https://mewaruniversity.academia.edu/SushilGhimire" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-purple-600 hover:text-white transition group" data-aos="zoom-in">
+        <i class="fas fa-university text-3xl mb-4 text-purple-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">
+          PhD Research Work<br><span class="text-xs opacity-80">Post-9/11 fiction & terrorism trauma</span>
+        </p>
+      </div>
+    </a>
 
-</div>
-</section><!-- RESEARCHGATE WITH ARTICLES -->
+    <a href="https://www.academia.edu/143683161/HISTORY_AS_DISCOURSE_IN_JEANETTE_WINTERSONS_THE_PASSION_THE_POLITICS_OF_ALTERITY" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-purple-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-history text-3xl mb-4 text-purple-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">
+          History as Discourse in<br><i>The Passion</i>
+        </p>
+      </div>
+    </a>
+
+    <a href="https://mewaruniversity.academia.edu/SushilGhimire" target="_blank" rel="noopener">
+      <div class="p-6 border rounded-2xl text-center hover:bg-purple-600 hover:text-white transition group" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-file-alt text-3xl mb-4 text-purple-600 group-hover:text-white"></i>
+        <p class="font-bold text-sm">
+        
+        </p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="text-center mt-12">
+    <a href="https://mewaruniversity.academia.edu/SushilGhimire" target="_blank" rel="noopener"
+       class="px-6 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">
+      View Academia Profile
+    </a>
+  </div>
+</section>
+
+
+<!-- RESEARCHGATE WITH ARTICLES -->
 <section id="researchgate" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-emerald-50">
 
   <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
