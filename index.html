@@ -26,6 +26,58 @@
       -webkit-backdrop-filter: blur(12px);
     }
 
+    /* Animated Gradient Background */
+    .animated-gradient {
+      background: linear-gradient(270deg, #3b82f6, #6366f1, #06b6d4, #f472b6);
+      background-size: 800% 800%;
+      animation: gradientMove 18s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% {background-position:0% 50%}
+      50% {background-position:100% 50%}
+      100% {background-position:0% 50%}
+    }
+
+    /* Animated Button */
+    .animated-btn {
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s, color 0.3s;
+    }
+    .animated-btn::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+      opacity: 0.2;
+      transition: opacity 0.3s;
+      z-index: 0;
+    }
+    .animated-btn:hover::after {
+      opacity: 0.5;
+    }
+    .animated-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Scroll Down Indicator */
+    .scroll-indicator {
+      position: absolute;
+      left: 50%;
+      bottom: 32px;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0) translateX(-50%); }
+      50% { transform: translateY(12px) translateX(-50%); }
+    }
+
     /* Background Pattern */
     .hero-section {
       background: url('https://www.transparenttextures.com/patterns/cubes.png'),
@@ -50,6 +102,7 @@
 <body class="bg-slate-50 text-slate-800">
 
   <!-- NAVBAR (Responsive + Mobile Menu) -->
+  <div class="fixed top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-pulse z-50"></div>
   <nav class="glass-nav fixed w-full z-50 top-0 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
       <a href="#home" class="text-base sm:text-lg md:text-xl font-bold tracking-tighter">
@@ -92,24 +145,30 @@
   </nav>
 
   <!-- HERO -->
-  <header id="home" class="hero-section min-h-screen flex items-center px-4 md:px-6 pt-24">
+  <header id="home" class="hero-section animated-gradient min-h-screen flex items-center px-4 md:px-6 pt-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       <div data-aos="fade-right" data-aos-duration="1000">
         <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs">Professor & Vice Principal</span>
         <h2 class="text-3xl sm:text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight">
-          SUSHIL GHIMIRE<br>
+          <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">SUSHIL GHIMIRE</span><br>
           <span class="italic font-normal text-slate-300">PhD</span>
         </h2>
         <p class="text-base md:text-lg text-slate-400 max-w-2xl mb-8 leading-relaxed font-light">
           Intellectual journey shaped by language, narrative, and the structures of thought. Specialized in Postcolonial Discourse, Trauma Fiction, and the Politics of Representation.
         </p>
         <a href="#about" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-bold shadow-xl inline-block">
-          Explore Profile
+          <span class="animated-btn"><span>Explore Profile</span></span>
         </a>
       </div>
 
       <div data-aos="zoom-in" data-aos-duration="1200" class="mt-8 md:mt-0">
-        <img src="sushilghimire.jpg" class="rounded-3xl shadow-2xl w-full h-auto" alt="Dr. Sushil Ghimire">
+        <img src="sushilghimire.jpg" class="rounded-3xl shadow-2xl w-full h-auto" alt="Dr. Sushil Ghimire" data-aos="flip-left" data-aos-delay="400">
+      </div>
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-indicator">
+        <span class="text-white text-lg animate-pulse"><i class="fa-solid fa-chevron-down"></i></span>
+        <span class="text-xs text-slate-200 mt-1">Scroll</span>
+      </div>
       </div>
     </div>
   </header>
@@ -538,7 +597,7 @@
 
     <div class="max-w-[90rem] mx-auto relative">
       <div class="swiper mySwiper overflow-hidden rounded-3xl shadow-2xl">
-        <div class="swiper-wrapper">
+  <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200">
 
           <!-- Repeat slides -->
           <div class="swiper-slide"><img src="IMG_0205.jpeg" alt="Gallery Image 1" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
@@ -717,6 +776,13 @@
   </div>
 </footer>
 
+  <!-- Go to Top Button -->
+  <button id="goTopBtn" title="Go to Top"
+    class="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white p-4 rounded-full shadow-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl focus:outline-none"
+    style="display:none;">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
   <!-- AOS + Mobile Menu Script -->
   <script>
     AOS.init({
@@ -734,7 +800,21 @@
     mobileMenu.querySelectorAll("a").forEach(a => {
       a.addEventListener("click", () => mobileMenu.classList.add("hidden"));
     });
+
+    // Go to Top Button logic
+    const goTopBtn = document.getElementById("goTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    });
+    goTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   </script>
 
 </body>
 </html>
+
