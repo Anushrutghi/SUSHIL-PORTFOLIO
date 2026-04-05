@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600;800&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Glass Effect */
+.glass-nav {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Animated Gradient Background */
+.animated-gradient {
+  background: linear-gradient(270deg, #3b82f6, #6366f1, #06b6d4, #f472b6);
+  background-size: 800% 800%;
+  animation: gradientMove 18s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animated Button */
+.animated-btn {
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+.animated-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+  opacity: 0.2;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+
+.animated-btn:hover::after {
+  opacity: 0.5;
+}
+
+.animated-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Scroll Down Indicator */
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) translateX(-50%); }
+  50% { transform: translateY(12px) translateX(-50%); }
+}
+
+/* Background Pattern */
+.hero-section {
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'),
+    linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95));
+  color: white;
+}
+
+.timeline-border {
+  border-left: 2px solid #e2e8f0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
