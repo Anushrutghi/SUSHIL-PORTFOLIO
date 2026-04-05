@@ -9,94 +9,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600;800&display=swap');
-
-    html, body { overflow-x: hidden; }
-    img, iframe { max-width: 100%; }
-
-    body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-
-    /* Custom Glass Effect */
-    .glass-nav {
-      background: rgba(15, 23, 42, 0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-    }
-
-    /* Animated Gradient Background */
-    .animated-gradient {
-      background: linear-gradient(270deg, #3b82f6, #6366f1, #06b6d4, #f472b6);
-      background-size: 800% 800%;
-      animation: gradientMove 18s ease infinite;
-    }
-    @keyframes gradientMove {
-      0% {background-position:0% 50%}
-      50% {background-position:100% 50%}
-      100% {background-position:0% 50%}
-    }
-
-    /* Animated Button */
-    .animated-btn {
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s, color 0.3s;
-    }
-    .animated-btn::after {
-      content: '';
-      position: absolute;
-      left: 0; top: 0; right: 0; bottom: 0;
-      background: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
-      opacity: 0.2;
-      transition: opacity 0.3s;
-      z-index: 0;
-    }
-    .animated-btn:hover::after {
-      opacity: 0.5;
-    }
-    .animated-btn span {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Scroll Down Indicator */
-    .scroll-indicator {
-      position: absolute;
-      left: 50%;
-      bottom: 32px;
-      transform: translateX(-50%);
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0) translateX(-50%); }
-      50% { transform: translateY(12px) translateX(-50%); }
-    }
-
-    /* Background Pattern */
-    .hero-section {
-      background: url('https://www.transparenttextures.com/patterns/cubes.png'),
-        linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95));
-      color: white;
-    }
-
-    .timeline-border { border-left: 2px solid #e2e8f0; }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -9px;
-      top: 0;
-      width: 18px;
-      height: 18px;
-      background: #3b82f6;
-      border-radius: 50%;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-slate-50 text-slate-800">
@@ -145,21 +60,22 @@
   </nav>
 
   <!-- HERO -->
-<header id="home" class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen flex items-center px-4 md:px-6 pt-24 relative overflow-hidden">
-<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-  <div data-aos="fade-right" data-aos-duration="1000">
-    <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">Professor & Vice Principal</span>
+  <header id="home" class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen flex items-center px-4 md:px-6 pt-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right" data-aos-duration="1000">
+        <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs">Professor & Vice Principal</span>
 
-    <h2 class="text-3xl sm:text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight">
-      <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-        SUSHIL GHIMIRE
-      </span><br>
-      <span class="italic font-normal text-slate-700">PhD</span>
-    </h2>
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-black mt-4 mb-6 leading-tight">
+          <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            SUSHIL GHIMIRE
+          </span><br>
+          <span class="italic font-normal text-slate-700">PhD</span>
+        </h2>
 
- <p class="text-base md:text-lg text-black max-w-2xl mb-8 leading-relaxed font-light">
-  Intellectual journey shaped by language, narrative, and the structures of thought. Specialized in Postcolonial Discourse, Trauma Fiction, and the Politics of Representation.
-</p>
+        <p class="text-base md:text-lg text-black max-w-2xl mb-8 leading-relaxed font-light">
+          Intellectual journey shaped by language, narrative, and the structures of thought. Specialized in Postcolonial Discourse, Trauma Fiction, and the Politics of Representation.
+        </p>
+
         <a href="#about" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-900 transition font-bold shadow-xl inline-block">
           <span class="animated-btn"><span>Explore Profile</span></span>
         </a>
@@ -168,11 +84,11 @@
       <div data-aos="zoom-in" data-aos-duration="1200" class="mt-8 md:mt-0">
         <img src="sushilghimire.jpg" class="rounded-3xl shadow-2xl w-full h-auto" alt="Dr. Sushil Ghimire" data-aos="flip-left" data-aos-delay="400">
       </div>
+
       <!-- Scroll Down Indicator -->
       <div class="scroll-indicator">
         <span class="text-white text-lg animate-pulse"><i class="fa-solid fa-chevron-down"></i></span>
         <span class="text-xs text-slate-200 mt-1">Scroll</span>
-      </div>
       </div>
     </div>
   </header>
@@ -180,7 +96,6 @@
   <!-- ABOUT -->
   <section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-white">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20">
-
       <div data-aos="fade-right">
         <h3 class="text-3xl md:text-4xl font-bold mb-6 md:mb-8">Scholarly Profile</h3>
 
@@ -198,7 +113,6 @@
       </div>
 
       <div class="space-y-6" data-aos="fade-left">
-
         <div class="p-6 bg-slate-50 rounded-xl">
           <h4 class="text-xl font-bold mb-2">Academic & Administrative Leadership</h4>
           <p class="text-slate-600 text-sm md:text-base">
@@ -219,7 +133,6 @@
             Cultivating analytical rigor and reflective inquiry by translating complex theoretical paradigms into meaningful academic dialogue, enabling students to interpret texts with intellectual independence, methodological precision, and critical depth.
           </p>
         </div>
-
       </div>
     </div>
   </section>
@@ -231,7 +144,6 @@
     </h3>
 
     <div class="max-w-4xl mx-auto timeline-border ml-4 sm:ml-6">
-
       <div class="relative pl-8 sm:pl-10 mb-12 timeline-item" data-aos="fade-left">
         <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">2025 — Present</span>
         <h4 class="text-xl md:text-2xl font-bold mt-2">Vice Principal & Professor of English</h4>
@@ -267,332 +179,262 @@
           Completed advanced studies in English Literature with concentration on literary theory, modern and postmodern fiction, cultural studies, and critical methodology—forming the intellectual foundation for subsequent scholarly and administrative engagements.
         </p>
       </div>
-
     </div>
   </section>
-<!-- ===================== -->
-<!-- PUBLICATIONS (DOI + NEPJOL) -->
-<!-- ===================== -->
-<section id="publications" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-blue-50">
 
-  <h3 class="text-center text-3xl md:text-4xl font-bold mb-6 text-slate-800">
-    Publications
-  </h3>
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+    <h3 class="text-center text-3xl md:text-4xl font-bold mb-6 text-slate-800">
+      Publications
+    </h3>
 
-  <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">
-    Selected scholarly works 
-  </p>
+    <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto">
+      Selected scholarly works
+    </p>
 
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <a href="https://doi.org/10.3126/jbkc.v8i0.29306" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in">
+          <i class="fas fa-book-open text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Spiritual Identity in Tagore’s <i>Chandalika</i>
+          </h4>
+        </div>
+      </a>
 
-    <!-- DOI / Scholarly Publications -->
-    <a href="https://doi.org/10.3126/jbkc.v8i0.29306" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in">
-        <i class="fas fa-book-open text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Spiritual Identity in Tagore’s <i>Chandalika</i>
-        </h4>
+      <a href="https://doi.org/10.3126/jbkc.v10i1.42105" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-paw text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Animal Imagery in Orwell’s <i>Animal Farm</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3126/jbkc.v12i1.60426" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-brain text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Trauma Representation in <i>The Andhi Khola</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3126/vot.v8i1.60866" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-coins text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Wealth &amp; Power in Diaz’s <i>Trust</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3126/mjecs.v3i1.89924" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="400">
+          <i class="fas fa-feather-alt text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Violence &amp; Memory in <i>Seto Bagh</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3126/jbkc.v14i1.80755" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="500">
+          <i class="fas fa-leaf text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Posthuman Ethics in Han Kang’s <i>The Vegetarian</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://doi.org/10.3126/mjecs.v4i1.89983" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="600">
+          <i class="fas fa-venus-mars text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Comparative Feminism: <i>Wuthering Heights</i> &amp; <i>Blue Mimosa</i>
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://www.nepjol.info/index.php/jbkc" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="700">
+          <i class="fas fa-journal-whills text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Journal of Balkumari College
+          </h4>
+        </div>
+      </a>
+
+      <a href="https://www.nepjol.info/index.php/mjecs/article/view/89924" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in" data-aos-delay="800">
+          <i class="fas fa-scroll text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Mindscape (MJ/ECS) Record
+          </h4>
+        </div>
+      </a>
+
+      <a href="IJELLSOctober-2018-.pdf" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in">
+          <i class="fas fa-file-alt text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Disjunctive Irony in James Joyce’s “Counterparts”
+          </h4>
+        </div>
+      </a>
+
+      <a href="THESIS (5).pdf" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group" data-aos="zoom-in">
+          <i class="fas fa-book-open text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            Existential Predicament in Bellow’s Mr. Sammler’s Planet
+          </h4>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ORCID -->
+  <section id="orcid-id" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-emerald-50">
+    <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
+      ORCID ID
+    </h3>
+
+    <div class="flex flex-col items-center">
+      <a href="https://orcid.org/0009-0008-2477-4939" target="_blank" rel="noopener" class="block w-full max-w-md">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group text-center" data-aos="zoom-in">
+          <i class="fas fa-id-badge text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            ORCID Profile
+          </h4>
+          <p class="text-sm text-slate-500 mt-2 mb-6">
+            0009-0008-2477-4939
+          </p>
+        </div>
+      </a>
+
+      <div class="mt-10">
+        <a href="https://orcid.org/0009-0008-2477-4939" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-lg hover:shadow-xl">
+          View ORCID ID
+        </a>
       </div>
-    </a>
+    </div>
+  </section>
 
-    <a href="https://doi.org/10.3126/jbkc.v10i1.42105" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="100">
-        <i class="fas fa-paw text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Animal Imagery in Orwell’s <i>Animal Farm</i>
-        </h4>
-      </div>
-    </a>
+  <!-- ACADEMIA -->
+  <section id="academia" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-purple-50">
+    <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
+      Academia Publication
+    </h3>
 
-    <a href="https://doi.org/10.3126/jbkc.v12i1.60426" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="200">
-        <i class="fas fa-brain text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Trauma Representation in <i>The Andhi Khola</i>
-        </h4>
-      </div>
-    </a>
-
-    <a href="https://doi.org/10.3126/vot.v8i1.60866" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="300">
-        <i class="fas fa-coins text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Wealth &amp; Power in Diaz’s <i>Trust</i>
-        </h4>
-      </div>
-    </a>
-
-    <a href="https://doi.org/10.3126/mjecs.v3i1.89924" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="400">
-        <i class="fas fa-feather-alt text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Violence &amp; Memory in <i>Seto Bagh</i>
-        </h4>
-      </div>
-    </a>
-
-    <a href="https://doi.org/10.3126/jbkc.v14i1.80755" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="500">
-        <i class="fas fa-leaf text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Posthuman Ethics in Han Kang’s <i>The Vegetarian</i>
-        </h4>
-      </div>
-    </a>
-
-    <a href="https://doi.org/10.3126/mjecs.v4i1.89983" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="600">
-        <i class="fas fa-venus-mars text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Comparative Feminism: <i>Wuthering Heights</i> &amp; <i>Blue Mimosa</i>
-        </h4>
-      </div>
-    </a>
-
-    <!-- NepJOL Cards (same style) -->
-    <a href="https://www.nepjol.info/index.php/jbkc" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="700">
-        <i class="fas fa-journal-whills text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Journal of Balkumari College
-        </h4>
-      </div>
-    </a>
-
-    <a href="https://www.nepjol.info/index.php/mjecs/article/view/89924" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in" data-aos-delay="800">
-        <i class="fas fa-scroll text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-           Mindscape (MJ/ECS) Record
-        </h4>
-      </div>
-    </a>
-      <!-- UNIQUE ARTICLE GOOGLE SCHOLAR -->
-    <a href="IJELLSOctober-2018-.pdf" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in">
-        <i class="fas fa-file-alt text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          Disjunctive Irony in James Joyce’s “Counterparts”
-        </h4>
-      </div>
-    </a>
-    <a href="THESIS (5).pdf" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-blue-100 group"
-           data-aos="zoom-in">
-        <i class="fas fa-book-open text-4xl text-blue-600 mb-5 group-hover:text-blue-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-         Existential Predicament in Bellow’s Mr. Sammler’s Planet
-        </h4>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- ===================== -->
-<!-- ORCID ID -->
-<!-- ===================== -->
-<section id="orcid-id" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-emerald-50">
-
-  <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
-    ORCID ID
-  </h3>
-
-  <!-- Centered Card -->
-  <div class="flex flex-col items-center">
-
-    <a href="https://orcid.org/0009-0008-2477-4939" 
-       target="_blank" 
-       rel="noopener" 
-       class="block w-full max-w-md">
-
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group text-center"
-           data-aos="zoom-in">
-
-        <i class="fas fa-id-badge text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          ORCID Profile
-        </h4>
-
-        <p class="text-sm text-slate-500 mt-2 mb-6">
-          0009-0008-2477-4939
-        </p>
-
-      </div>
-    </a>
-
-    <!-- Profile Button -->
-    <div class="mt-10">
-      <a href="https://orcid.org/0009-0008-2477-4939" 
-         target="_blank" 
-         rel="noopener"
-         class="inline-flex items-center px-8 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-lg hover:shadow-xl">
-        View ORCID ID
+    <div class="flex justify-center">
+      <a href="https://www.academia.edu/7000932/Discourse_of_the_Trauma_of_Terrorism_in_Post_9_11_American_Fiction" target="_blank" rel="noopener" class="block w-full max-w-md">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-purple-100 group text-center" data-aos="zoom-in">
+          <i class="fas fa-university text-4xl text-purple-600 mb-5 group-hover:text-purple-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800 leading-snug">
+            PhD Research Work
+          </h4>
+          <p class="text-sm text-slate-500 mt-2 mb-6">
+            Post-9/11 fiction &amp; terrorism trauma
+          </p>
+        </div>
       </a>
     </div>
 
-  </div>
+    <div class="text-center mt-16">
+      <a href="https://mewaruniversity.academia.edu/SushilGhimire" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition shadow-lg hover:shadow-xl">
+        View Academia Profile
+      </a>
+    </div>
+  </section>
 
-</section>
+  <!-- RESEARCHGATE -->
+  <section id="researchgate" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-emerald-50">
+    <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
+      ResearchGate Publications
+    </h3>
 
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <a href="https://www.researchgate.net/publication/264888753_Increasing_HouseholdFood_Security_through_System_of_Wheat_Intensification_SWI_Technique?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InByb2ZpbGUifX0" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-seedling text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Increasing Household Food Security through System of Wheat Intensification (SWI) Technique
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            ResearchGate Publication
+          </p>
+        </div>
+      </a>
 
-<!-- ===================== -->
-<!-- ACADEMIA -->
-<!-- ===================== -->
-<section id="academia" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-purple-50">
+      <a href="https://www.researchgate.net/publication/393111084_Becoming-Plant_Post-Human_Ethics_and_The_Refusal_of_Flesh_in_Han_Kang's_The_Vegetarian" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-leaf text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Becoming-Plant: Post-Human Ethics in <i>The Vegetarian</i>
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            Journal of Balkumari College, 2025
+          </p>
+        </div>
+      </a>
 
-  <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
-    Academia Publication
-  </h3>
+      <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-feather-alt text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Violence &amp; Memory in <i>Seto Bagh</i> and <i>The Knife</i>
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            Mindscape Journal, 2024
+          </p>
+        </div>
+      </a>
 
-  <!-- Centered Card -->
-  <div class="flex justify-center">
-    <a href="https://www.academia.edu/7000932/Discourse_of_the_Trauma_of_Terrorism_in_Post_9_11_American_Fiction" 
-       target="_blank" 
-       rel="noopener" 
-       class="block w-full max-w-md">
+      <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-brain text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Trauma Representation in <i>The Andhi Khola</i>
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            Journal of Balkumari College, 2023
+          </p>
+        </div>
+      </a>
 
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-purple-100 group text-center"
-           data-aos="zoom-in">
+      <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-coins text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Wealth &amp; Power in <i>Trust</i>
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            Voice of Teacher, 2023
+          </p>
+        </div>
+      </a>
 
-        <i class="fas fa-university text-4xl text-purple-600 mb-5 group-hover:text-purple-800 transition"></i>
+      <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
+        <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
+          <i class="fas fa-book-open text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
+          <h4 class="font-bold text-lg text-slate-800">
+            Identity in <i>Chandalika</i>
+          </h4>
+          <p class="text-sm text-slate-500 mt-2">
+            Journal of Balkumari College, 2019
+          </p>
+        </div>
+      </a>
+    </div>
 
-        <h4 class="font-bold text-lg text-slate-800 leading-snug">
-          PhD Research Work
-        </h4>
+    <div class="text-center mt-16">
+      <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-lg">
+        View Full ResearchGate Profile
+      </a>
+    </div>
+  </section>
 
-        <p class="text-sm text-slate-500 mt-2 mb-6">
-          Post-9/11 fiction &amp; terrorism trauma
-        </p>
-
-      </div>
-    </a>
-  </div>
-
-  <!-- Profile Button -->
-  <div class="text-center mt-16">
-    <a href="https://mewaruniversity.academia.edu/SushilGhimire" 
-       target="_blank" 
-       rel="noopener"
-       class="inline-flex items-center px-8 py-3 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition shadow-lg hover:shadow-xl">
-      View Academia Profile
-    </a>
-  </div>
-
-</section>
-
-
-<!-- ===================== -->
-<!-- RESEARCHGATE WITH ARTICLES -->
-<!-- ===================== -->
-<section id="researchgate" class="py-20 md:py-28 px-4 md:px-6 bg-gradient-to-br from-slate-50 to-emerald-50">
-
-  <h3 class="text-center text-3xl md:text-4xl font-bold mb-16 text-slate-800">
-    ResearchGate Publications
-  </h3>
-
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-
-    <!-- Article 1 -->
-    <a href="https://www.researchgate.net/publication/264888753_Increasing_HouseholdFood_Security_through_System_of_Wheat_Intensification_SWI_Technique?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImxvZ2luIiwicGFnZSI6InByb2ZpbGUifX0"
-       target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-seedling text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Increasing Household Food Security through System of Wheat Intensification (SWI) Technique
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          ResearchGate Publication
-        </p>
-      </div>
-    </a>
-
-    <!-- Article 2 -->
-    <a href="https://www.researchgate.net/publication/393111084_Becoming-Plant_Post-Human_Ethics_and_The_Refusal_of_Flesh_in_Han_Kang's_The_Vegetarian" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-leaf text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Becoming-Plant: Post-Human Ethics in <i>The Vegetarian</i>
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          Journal of Balkumari College, 2025
-        </p>
-      </div>
-    </a>
-
-    <!-- Article 3 -->
-    <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-feather-alt text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Violence &amp; Memory in <i>Seto Bagh</i> and <i>The Knife</i>
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          Mindscape Journal, 2024
-        </p>
-      </div>
-    </a>
-
-    <!-- Article 4 -->
-    <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-brain text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Trauma Representation in <i>The Andhi Khola</i>
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          Journal of Balkumari College, 2023
-        </p>
-      </div>
-    </a>
-
-    <!-- Article 5 -->
-    <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-coins text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Wealth &amp; Power in <i>Trust</i>
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          Voice of Teacher, 2023
-        </p>
-      </div>
-    </a>
-
-    <!-- Article 6 -->
-    <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6" target="_blank" rel="noopener" class="block">
-      <div class="p-8 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 border border-emerald-100 group">
-        <i class="fas fa-book-open text-4xl text-emerald-600 mb-5 group-hover:text-emerald-800 transition"></i>
-        <h4 class="font-bold text-lg text-slate-800">
-          Identity in <i>Chandalika</i>
-        </h4>
-        <p class="text-sm text-slate-500 mt-2">
-          Journal of Balkumari College, 2019
-        </p>
-      </div>
-    </a>
-
-  </div>
-
-  <div class="text-center mt-16">
-    <a href="https://www.researchgate.net/profile/Sushil-Ghimire-6"
-       target="_blank" rel="noopener"
-       class="inline-flex items-center px-8 py-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition shadow-lg">
-      View Full ResearchGate Profile
-    </a>
-  </div>
-
-</section>
   <!-- GALLERY -->
   <section id="gallery" class="py-16 md:py-24 px-4 md:px-6 bg-slate-950 text-white">
     <h3 class="text-center text-3xl md:text-5xl font-bold mb-12 md:mb-20" data-aos="fade-up">
@@ -601,9 +443,7 @@
 
     <div class="max-w-[90rem] mx-auto relative">
       <div class="swiper mySwiper overflow-hidden rounded-3xl shadow-2xl">
-  <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200">
-
-          <!-- Repeat slides -->
+        <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-slide"><img src="IMG_0205.jpeg" alt="Gallery Image 1" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
           <div class="swiper-slide"><img src="IMG_0184.jpeg" alt="Gallery Image 2" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
           <div class="swiper-slide"><img src="IMG_9698.jpeg" alt="Gallery Image 3" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
@@ -619,7 +459,6 @@
           <div class="swiper-slide"><img src="6120A472-2E2C-4E50-9037-A17D060E2376.jpeg" alt="Gallery Image 13" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
           <div class="swiper-slide"><img src="7395B7D8-E554-4F9D-BAB8-677A3130ECA5.jpeg" alt="Gallery Image 14" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
           <div class="swiper-slide"><img src="9019CD8A-3C36-46AE-AF63-DCB98010E293.jpeg" alt="Gallery Image 15" class="w-full h-[320px] sm:h-[420px] md:h-[700px] object-cover"></div>
-        
         </div>
 
         <div class="swiper-button-next !text-white bg-slate-900/50 p-6 rounded-full !w-12 !h-12 flex items-center justify-center"></div>
@@ -629,159 +468,89 @@
     </div>
   </section>
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-
   <!-- CV -->
-<section id="cv" class="py-16 md:py-24 px-4 md:px-6 bg-slate-900 text-white">
+  <section id="cv" class="py-16 md:py-24 px-4 md:px-6 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl md:text-5xl font-bold mb-6">
+        View CV
+      </h3>
 
-  <div class="max-w-4xl mx-auto text-center">
+      <p class="text-slate-400 text-base md:text-lg mb-10 max-w-2xl mx-auto">
+        Access the comprehensive professional portfolio, published research articles, and educational history.
+      </p>
 
-    <h3 class="text-3xl md:text-5xl font-bold mb-6">
-      View CV
-    </h3>
-
-    <p class="text-slate-400 text-base md:text-lg mb-10 max-w-2xl mx-auto">
-      Access the comprehensive professional portfolio, published research articles, and educational history.
-    </p>
-
-    <a href="https://docs.google.com/document/d/1zShxiWaX-bkdaWKWiBOkdBhCf6cxXNGA/edit"
-       class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">
-       View CV
-    </a>
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-<footer id="contact" class="py-20 px-4 md:px-6 bg-gradient-to-b from-white to-slate-50 border-t">
-
-  <div class="max-w-6xl mx-auto text-center" data-aos="zoom-in">
-
-    <!-- Heading -->
-    <h3 class="text-3xl md:text-5xl font-bold mb-6">
-      Get In <span class="text-blue-600">Touch</span>
-    </h3>
-
-    <p class="text-lg md:text-xl text-slate-500 mb-14 max-w-2xl mx-auto">
-      I welcome academic dialogue, research collaboration, and institutional partnerships.
-    </p>
-
-    <!-- Contact Cards -->
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-       
-        <!-- INSTAGRAM -->
-<a href="https://www.instagram.com/sushil.ghimire.524/" target="_blank"
-   class="group p-8 border rounded-3xl hover:border-pink-500 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-
-  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-pink-100 group-hover:bg-pink-500 transition mb-5">
-    <i class="fab fa-instagram text-pink-600 group-hover:text-white text-2xl transition"></i>
-  </div>
-
-  <p class="font-bold text-base md:text-lg mb-1">Instagram</p>
-  <span class="text-slate-500 text-sm break-all">
-    Sushil Ghimire
-  </span>
-</a>
-<!-- LINKEDIN -->
-<a href="https://www.linkedin.com/in/sushil-ghimire-24539b60/" target="_blank"
-   class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-
-  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
-    <i class="fab fa-linkedin-in text-blue-600 group-hover:text-white text-2xl transition"></i>
-  </div>
-
-  <p class="font-bold text-base md:text-lg mb-1">LinkedIn</p>
-  <span class="text-slate-500 text-sm break-all">
-    Sushil Ghimire
-  </span>
-</a>
-<!-- FACEBOOK -->
-<a href="https://www.facebook.com/sushil.ghimire.524" target="_blank"
-   class="group p-8 border rounded-3xl hover:border-blue-700 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-
-  <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-700 transition mb-5">
-    <i class="fab fa-facebook-f text-blue-700 group-hover:text-white text-2xl transition"></i>
-  </div>
-
-  <p class="font-bold text-base md:text-lg mb-1">Facebook</p>
-  <span class="text-slate-500 text-sm break-all">
-    Sushil Ghimire
-  </span>
-</a>
-
-      <!-- EMAIL -->
-      <a href="mailto:ghsush@gmail.com"
-         class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-
-        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
-          <i class="fas fa-envelope text-blue-600 group-hover:text-white text-2xl transition"></i>
-        </div>
-
-        <p class="font-bold text-base md:text-lg mb-1">Email</p>
-        <span class="text-slate-500 text-sm break-all">
-          ghsush@gmail.com
-        </span>
+      <a href="https://docs.google.com/document/d/1zShxiWaX-bkdaWKWiBOkdBhCf6cxXNGA/edit" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full font-bold hover:bg-blue-500 hover:text-white transition">
+        View CV
       </a>
+    </div>
+  </section>
 
-      <!-- PHONE -->
-      <a href="tel:+9779855081820"
-         class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+  <!-- CONTACT -->
+  <footer id="contact" class="py-20 px-4 md:px-6 bg-gradient-to-b from-white to-slate-50 border-t">
+    <div class="max-w-6xl mx-auto text-center" data-aos="zoom-in">
+      <h3 class="text-3xl md:text-5xl font-bold mb-6">
+        Get In <span class="text-blue-600">Touch</span>
+      </h3>
 
-        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
-          <i class="fas fa-phone text-blue-600 group-hover:text-white text-2xl transition"></i>
+      <p class="text-lg md:text-xl text-slate-500 mb-14 max-w-2xl mx-auto">
+        I welcome academic dialogue, research collaboration, and institutional partnerships.
+      </p>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+        <a href="https://www.instagram.com/sushil.ghimire.524/" target="_blank" class="group p-8 border rounded-3xl hover:border-pink-500 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-pink-100 group-hover:bg-pink-500 transition mb-5">
+            <i class="fab fa-instagram text-pink-600 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">Instagram</p>
+          <span class="text-slate-500 text-sm break-all">Sushil Ghimire</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sushil-ghimire-24539b60/" target="_blank" class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
+            <i class="fab fa-linkedin-in text-blue-600 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">LinkedIn</p>
+          <span class="text-slate-500 text-sm break-all">Sushil Ghimire</span>
+        </a>
+
+        <a href="https://www.facebook.com/sushil.ghimire.524" target="_blank" class="group p-8 border rounded-3xl hover:border-blue-700 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-700 transition mb-5">
+            <i class="fab fa-facebook-f text-blue-700 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">Facebook</p>
+          <span class="text-slate-500 text-sm break-all">Sushil Ghimire</span>
+        </a>
+
+        <a href="mailto:ghsush@gmail.com" class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
+            <i class="fas fa-envelope text-blue-600 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">Email</p>
+          <span class="text-slate-500 text-sm break-all">ghsush@gmail.com</span>
+        </a>
+
+        <a href="tel:+9779855081820" class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
+            <i class="fas fa-phone text-blue-600 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">Phone</p>
+          <span class="text-slate-500 text-sm">+977-9855081820</span>
+        </a>
+
+        <div class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
+            <i class="fas fa-map-marker-alt text-blue-600 group-hover:text-white text-2xl transition"></i>
+          </div>
+          <p class="font-bold text-base md:text-lg mb-1">Location</p>
+          <span class="text-slate-500 text-sm">Bharatpur-2, Chitwan</span>
         </div>
-
-        <p class="font-bold text-base md:text-lg mb-1">Phone</p>
-        <span class="text-slate-500 text-sm">
-          +977-9855081820
-        </span>
-      </a>
-
-      <!-- LOCATION -->
-      <div
-         class="group p-8 border rounded-3xl hover:border-blue-600 hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
-
-        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-100 group-hover:bg-blue-600 transition mb-5">
-          <i class="fas fa-map-marker-alt text-blue-600 group-hover:text-white text-2xl transition"></i>
-        </div>
-
-        <p class="font-bold text-base md:text-lg mb-1">Location</p>
-        <span class="text-slate-500 text-sm">
-          Bharatpur-2, Chitwan
-        </span>
       </div>
 
+      <div class="mt-16 pt-8 border-t text-slate-400 text-sm">
+        © 2026 Dr. Sushil Ghimire , PhD | Portfolio
+      </div>
     </div>
-
-    <!-- Bottom line -->
-    <div class="mt-16 pt-8 border-t text-slate-400 text-sm">
-      © 2026 Dr. Sushil Ghimire , PhD |  Portfolio
-    </div>
-
-  </div>
-</footer>
+  </footer>
 
   <!-- Go to Top Button -->
   <button id="goTopBtn" title="Go to Top"
@@ -790,38 +559,7 @@
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- AOS + Mobile Menu Script -->
-  <script>
-    AOS.init({
-      once: true,
-      duration: 800,
-    });
-
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-
-    mobileMenu.querySelectorAll("a").forEach(a => {
-      a.addEventListener("click", () => mobileMenu.classList.add("hidden"));
-    });
-
-    // Go to Top Button logic
-    const goTopBtn = document.getElementById("goTopBtn");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        goTopBtn.style.display = "block";
-      } else {
-        goTopBtn.style.display = "none";
-      }
-    });
-    goTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
